@@ -1,4 +1,9 @@
 form {text-align: center }
+body{ 
+    background-color: skyblue;
+    margin: 1;
+    padding: 1;
+}
 
 p{ 
   font-size: 22px; 
@@ -9,14 +14,15 @@ p{
 }
 
 
+
 .cadre {
-    border: 2px solid #3498db; /* Couleur de la bordure du cadre */
+    border: 2px solid skyblue; /* Couleur de la bordure du cadre */
     padding: auto; /* Espace intérieur du cadre */
     border-radius: auto; /* Coins arrondis du cadre */
     width: 60%; /* Largeur du cadre */
     margin: 20px auto; /* Centre le cadre sur la page */
-    color: white; /* Couleur du texte */
-    background-color: #2c94dd;
+    color: black; /* Couleur du texte */
+    background-color: lightblue;
 }
 
 
