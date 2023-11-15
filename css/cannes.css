@@ -32,4 +32,18 @@
   
   .dropdown:hover .dropdown-content {display: block;}
   
-  .dropdown:hover .dropbtn {background-color: #3
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  
+  /* Fin Nav */
+
+
+  /* Debut footer */
+  /* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  /* Fin Footer */
