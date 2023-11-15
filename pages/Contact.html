@@ -28,6 +28,62 @@
             </div>  
           </nav> 
     </header>
+
+    <Main>
+        <p> La Mairie de Cannes est à votre disposition pour toutes questions concernant les 
+            services de la collectivité. Contactez-nous en complétant le formulaire ci-dessous.
+        </p>
+        <p>
+            Votre demande sera transmise et traitée par la Mairie qui vous répondra et vous informera de la suite donnée.
+        </p>
+
+        
+        <h1>Vos coordonnées</h1>
+    <form action="traitement_formulaire.php" method="post">
+        <label for="civilite">Civilité :</label>
+        <select id="civilite" name="civilite">
+            <option value="Monsieur">Monsieur</option>
+            <option value="Madame">Madame</option>
+            <option value="Autre">Autre</option>
+        </select>
+        <br><br>
+
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom">
+        <br><br>
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom">
+        <br><br>
+
+        <label for="adresse">Adresse postale :</label>
+        <input type="text" id="adresse" name="adresse">
+        <br><br>
+    </form>
+     <h1>Pour vous  contacter </h1>
+    <form>  <label for="Telephone"> Téléphone portable :</label>
+        <input type="text" id="telephone" name="telephone">
+        <br><br>
+        <label for="Email"> mail :</label>
+        <input type="text" id="adresse mail " name="mail">
+        <br><br>
+
+        
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="6" required></textarea> <br><br>
+
+
+        <input type="checkbox" id="confidentialite" name="confidentialite">
+        <label for="confidentialite">J'ai lu ci-dessous et j'accepte le traitement de mes données personnelles.</label>
+        <br><br> 
+        
+    
+    </form>
+
+    <input type="submit" value="Envoyer">
+    </Main>
+
+
     <footer>
         <p>© 2023 La ville de Cannes. Tous droits réservés.</p>
         <p>Contact</p>
