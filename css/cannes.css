@@ -16,11 +16,18 @@
 
   /* Debut footer */
   /* Style the footer */
-footer {
-    background-color: #777;
-    padding: 10px;
-    text-align: center;
-    color: white;
-  }
+  footer {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin: auto 5%;
+    
+      background-color: #2c94dd;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
 
   /* Fin Footer */
