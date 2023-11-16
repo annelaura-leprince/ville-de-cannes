@@ -17,15 +17,17 @@
     font-size: 5rem;
 }
 
-.principal {
+.container {
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 .image-container {
     position: relative;
     border-radius: 50%;
     overflow: hidden;
-    margin: 20px;
+    margin: 50px;
     width: 150px;
     height: 150px;
     transition: transform 0.3s ease-in-out;
