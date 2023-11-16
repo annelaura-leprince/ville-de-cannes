@@ -54,3 +54,19 @@
     margin-left: 50px;
     margin-right: 50px;
 }
+
+.container-text {
+    background-image: url('../img/sable.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px; 
+    color: black; 
+    text-align: center; 
+    padding: 20px; 
+}
+
+.container-text p {
+    background-color: rgba(255, 255, 255, 0.7); /* Couleur de fond du cadre */
+    padding: 10px; /* Espacement intérieur du cadre */
+    border: 1px solid black; /* Bordure autour du cadre */
+  }
