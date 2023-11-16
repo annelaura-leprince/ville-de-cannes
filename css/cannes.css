@@ -2,6 +2,7 @@
 .navigation {
   display: flex;
   align-items: center;
+  a
   background-color: lightblue;
 }
 .navigation> div a {
