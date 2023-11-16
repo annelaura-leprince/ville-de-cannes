@@ -1,0 +1,38 @@
+P, h1{ text-align: center;
+}
+/* Style pour le conteneur principal avec flexbox */
+.image-container-wrapper {
+    display: flex; /* Utilise le modèle flexbox */
+    flex-direction: row;
+    margin: 0%;
+    padding: 0%;
+    gap: 20px;
+
+    align-items: center;
+    justify-content: space-around; /* Aligne les éléments avec un espacement équitable entre eux */
+    /*flex-wrap: wrap;  Permet le retour à la ligne si l'espace est insuffisant */
+}
+
+.image-container {
+    text-align: center;
+    justify-content: center;
+    margin: 0% 0%;
+    width: 33%;
+    margin-top: 1%; /* Marge supérieure pour séparer l'image du texte */
+    color: grey; /* Couleur du texte */
+    margin-bottom: 0; /* Marge inférieure entre chaque paire image-texte */
+}
+    
+.image-container img {
+    width: 90%; /* Ajustez la largeur de l'image selon vos besoins */
+    height: auto; /* Hauteur automatique pour maintenir les proportions originales */
+    margin-right: 0; /* Supprimer la marge à droite de chaque image */
+}
+
+.test{
+  text-align: center;
+  font-size: small;
+  margin: 0%;
+  padding: 0%;
+}
+    
