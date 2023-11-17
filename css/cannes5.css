@@ -3,6 +3,10 @@
     overflow: hidden;
     width: 100%; /* Prend toute la largeur de la fenêtre */
     position: relative;
+    background: url(../img/241223299_6296353803738315_1813323170125299366_n.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
   }
   
   .slider {
@@ -12,17 +16,22 @@
   }
   
   .slider img {
-    flex: 0 0 33.33%; /* Chaque image prend 33.33% de la largeur totale pour 3 images */
+    flex: 33.33%; /* Chaque image prend 33.33% de la largeur totale pour 3 images */
     max-width: 30%; /* Assure que les images ne dépassent pas la largeur du conteneur */
     height: auto;
+  }
+
+  /* Pour éviter un espacement excessif après la dernière image */
+.slider img:last-child {
+    margin-right: 0; /* Supprime l'espacement à droite de la dernière image */
   }
   
   @keyframes scrollImages {
     0% {
-      transform: translateX(100%);
+      transform: translateX(200%);
     }
     100% {
-      transform: translateX(-200%);
+      transform: translateX(-100%);
     }
   }
   
