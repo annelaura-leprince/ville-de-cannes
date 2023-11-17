@@ -14,7 +14,7 @@
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    font-size: 5rem;
+    font-size: 5rem; 
 }
 
 .container {
@@ -26,12 +26,13 @@
 
 .image-container {
     position: relative;
-    border-radius: 50%;
+    border-radius: 50%; /* Rend l'image ronde */
     overflow: hidden;
     margin: 50px;
     width: 150px;
     height: 150px;
     transition: transform 0.3s ease-in-out;
+    text-align: center;
 }
 
 .image-container :hover {
@@ -71,4 +72,8 @@
     border: 1px solid black; /* Bordure autour du cadre */
   }
 
+  /* Cercle-Texte */
   
+
+  
+  /* Fin  */
