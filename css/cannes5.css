@@ -3,12 +3,11 @@
     overflow: hidden;
     width: 100%; /* Prend toute la largeur de la fenêtre */
     position: relative;
-    background: url('chemin/vers/ton/image.png') repeat;
   }
   
   .slider {
     display: flex;
-    width: 100%; /* Largeur totale = 3 fois la largeur de la fenêtre pour contenir les images */
+    width: 50%; /* Largeur totale = 3 fois la largeur de la fenêtre pour contenir les images */
     animation: scrollImages 25s linear infinite; /* Ajuste la vitesse et la durée */
   }
   
@@ -23,7 +22,7 @@
       transform: translateX(100%);
     }
     100% {
-      transform: translateX(-120%);
+      transform: translateX(-200%);
     }
   }
   
