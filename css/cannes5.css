@@ -3,10 +3,11 @@
     overflow: hidden;
     width: 100%; /* Prend toute la largeur de la fenêtre */
     position: relative;
-    background: url(../img/241223299_6296353803738315_1813323170125299366_n.jpg);
+    background: url(../img/vagues-test.webp);
     background-size: cover;
     background-position: center;
     max-width: 100%;
+    margin-bottom: 20px;
   }
   
   .slider {
@@ -31,7 +32,7 @@
       transform: translateX(200%);
     }
     100% {
-      transform: translateX(-100%);
+      transform: translateX(-200%);
     }
   }
   
