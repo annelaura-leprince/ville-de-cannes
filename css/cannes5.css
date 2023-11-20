@@ -41,19 +41,70 @@
   object-fit: cover;
 }
 
-.cadres p {
-  position: absolute;
-  padding: 5px;
-  margin: 0;
-  text-align: center;
+.image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
-.texte {
-  right: -100%; /* Place le texte à droite du cadre */
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.image-container p {
+  position: absolute;
+  top: 0;
+  right: -100%; /* Place le texte à droite de l'image */
   width: 100%; /* Ajuste la largeur */
   height: 100%; /* Ajuste la hauteur */
   background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: right 0.3s e
+  transition: right 0.3s ease; /* Ajoute une transition fluide */
+}
+
+.cadres:hover .image-container p {
+  right: 0; /* Déplace le texte à la position désirée au survol */
+}
+
+/* Styles pour le défilement d'images */
+.image-slider {
+    overflow: hidden;
+    width: 100%; /* Prend toute la largeur de la fenêtre */
+    position: relative;
+    background: url(../img/vagues-test.webp);
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    margin-bottom: 5%;
+    margin-top: 15px;
+  }
+  
+  .slider {
+    display: flex;
+    width: 50%; /* Largeur totale = 3 fois la largeur de la fenêtre pour contenir les images */
+    animation: scrollImages 25s linear infinite; /* Ajuste la vitesse et la durée */
+  }
+  
+  .slider img {
+    flex: 33.33%; /* Chaque image prend 33.33% de la largeur totale pour 3 images */
+    max-width: 30%; /* Assure que les images ne dépassent pas la largeur du conteneur */
+    height: auto;
+  }
+
+  /* Pour éviter un espacement excessif après la dernière image */
+.slider img:last-child {
+    margin-right: 0; /* Supprime l'espacement à droite de la dernière image */
+  }
+  
+  @keyframes scrollImages {
+    0% {
+      transform: translateX(200%);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+  
