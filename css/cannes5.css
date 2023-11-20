@@ -15,42 +15,26 @@
   overflow: hidden;
 }
 
+.cadres {
+  width: 300px; /* Largeur du cadre carré */
+  height: 200px; /* Hauteur du cadre carré */
+  border: 5px solid lightblue; /* Bordure pour le cadre (remplacez #000 par la couleur souhaitée) */
+  overflow: hidden; /* Cache toute partie de l'image qui dépasse du cadre */
+  display: flex;
+  justify-content: center; /* Centre l'image horizontalement */
+  align-items: center; /* Centre l'image verticalement */
+  margin-top: 15px;
+}
+
+.cadres img {
+  width: 100%; /* Ajuste la largeur de l'image pour remplir le cadre carré */
+  height: auto; /* Permet à la hauteur de s'adapter automatiquement pour maintenir les proportions */
+  display: flex;
+  object-fit: cover;
+}
+
 /* Styles pour le défilement d'images */
 .image-slider {
     overflow: hidden;
     width: 100%; /* Prend toute la largeur de la fenêtre */
     position: relative;
-    background: url(../img/vagues-test.webp);
-    background-size: cover;
-    background-position: center;
-    max-width: 100%;
-    margin-bottom: 5%;
-    margin-top: 80%;
-  }
-  
-  .slider {
-    display: flex;
-    width: 50%; /* Largeur totale = 3 fois la largeur de la fenêtre pour contenir les images */
-    animation: scrollImages 25s linear infinite; /* Ajuste la vitesse et la durée */
-  }
-  
-  .slider img {
-    flex: 33.33%; /* Chaque image prend 33.33% de la largeur totale pour 3 images */
-    max-width: 30%; /* Assure que les images ne dépassent pas la largeur du conteneur */
-    height: auto;
-  }
-
-  /* Pour éviter un espacement excessif après la dernière image */
-.slider img:last-child {
-    margin-right: 0; /* Supprime l'espacement à droite de la dernière image */
-  }
-  
-  @keyframes scrollImages {
-    0% {
-      transform: translateX(200%);
-    }
-    100% {
-      transform: translateX(-200%);
-    }
-  }
-  
