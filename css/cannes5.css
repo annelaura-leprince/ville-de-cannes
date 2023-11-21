@@ -71,6 +71,12 @@
   right: 0; /* Déplace le texte à la position désirée au survol */
 }
 
+.description {
+text-align: center;
+margin-left: 80px;
+margin-right: 80px;
+}
+
 /* Styles pour le défilement d'images */
 .image-slider {
     overflow: hidden;
@@ -86,7 +92,7 @@
   
   .slider {
     display: flex;
-    width: 50%; /* Largeur totale = 3 fois la largeur de la fenêtre pour contenir les images */
+    width: 30%; /* Largeur totale = 3 fois la largeur de la fenêtre pour contenir les images */
     animation: scrollImages 25s linear infinite; /* Ajuste la vitesse et la durée */
   }
   
@@ -102,11 +108,4 @@
   }
   
   @keyframes scrollImages {
-    0% {
-      transform: translateX(200%);
-    }
-    100% {
-      transform: translateX(-200%);
-    }
-  }
-  
+    0
