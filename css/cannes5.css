@@ -82,9 +82,9 @@ margin-right: 80px;
     overflow: hidden;
     width: 100%; /* Prend toute la largeur de la fenêtre */
     position: relative;
-    background: url(../img/vagues-test.webp);
+    background: url(../img/Le-musée-des-explorations-du-monde-à-Cannes-1-1.png);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     max-width: 100%;
     margin-bottom: 5%;
     margin-top: 15px;
@@ -108,4 +108,11 @@ margin-right: 80px;
   }
   
   @keyframes scrollImages {
-    0
+    0% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(200%);
+    }
+  }
+  
