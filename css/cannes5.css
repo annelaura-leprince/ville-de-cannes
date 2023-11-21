@@ -107,3 +107,12 @@ margin-right: 80px;
     margin-right: 0; /* Supprime l'espacement à droite de la dernière image */
   }
   
+  @keyframes scrollImages {
+    0% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(200%);
+    }
+  }
+  
